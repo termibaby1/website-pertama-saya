@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <style>
+    @media (max-width: 576px) {
+      .custom-carousel {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .custom-carousel img {
+        height: auto;
+      }
+
+      .card img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- INI NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Journey of a Coder 😸</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact me :3</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About Me</a></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- INI NAVBAR END -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 text-primary">Kumpulan Karya Pertamaku ✨</h2>
+
+    <!-- Bagian 1: Proyek Pertamaku -->
+    <div class="card mb-4 shadow">
+      <div class="card-body">
+        <h4 class="card-title">📁 Proyek HTML Pertama</h4>
+        <p class="card-text">Ini adalah file HTML pertamaku saat belajar. Walau sederhana, file ini adalah awal dari
+          semua perjalanan coding-ku. Yuk lihat tampilannya atau cek kodenya langsung!</p>
+        <a href="1234.html" class="btn btn-primary" target="_blank">Lihat Proyek</a>
+      </div>
+    </div>
+
+    <!-- Bagian 2: Halaman Favorit -->
+    <div class="card mb-4 shadow">
+      <div class="card-body">
+        <h4 class="card-title">🧩 Halaman Mini Favorit</h4>
+        <p class="card-text">Dari sekian halaman yang aku buat, aku paling suka halaman <b>Playground</b> karena
+          interaktif dan lucu! Kamu bisa coba klik-klik di sana 🤭</p>
+        <a href="eksperimen.html" class="btn btn-success" target="_blank">Coba Playground</a>
+      </div>
+    </div>
+
+    <!-- Bagian 3: Sumber Belajar -->
+    <div class="card mb-4 shadow">
+      <div class="card-body">
+        <h4 class="card-title">📚 Sumber Belajarku</h4>
+        <p class="card-text">Aku banyak belajar dari sumber-sumber keren ini:</p>
+        <ul>
+          <li><a href="https://getbootstrap.com" target="_blank">Bootstrap</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bagian 4: Spesial Thanks -->
+    <!-- Bagian 5: Terima Kasih untuk Kreator -->
+    <div class="card mb-4 shadow">
+      <div class="card-body">
+        <h4 class="card-title">Spesial Thanks</h4>
+        <p class="card-text">Aku mau kasih terima kasih khusus buat bang <b>Dea Afrizal</b> yang bikin video tutorial web
+          pemula di YouTube. Tanpa videonya, mungkin aku nggak akan semangat belajar kayak sekarang.</p>
+        <p class="card-text">Aku juga ikut belajar lewat <b> Playlist CuyUniverse</b>, yang jadi pijakan awal buat
+          ngoding sampai sejauh ini!</p>
+        <a href="https://www.youtube.com/@deaafrizal" target="_blank" class="btn btn-outline-secondary">Lihat Channel
+          YouTube Dea afrizal</a>
+      </div>
+    </div>
+
+
+
+    <!-- item tambahan jika mau ditambah -->
+    <div>
+
+      <!-- Navigasi halaman -->
+      <div class="btn-toolbar justify-content-center mt-4" role="toolbar" aria-label="Toolbar dengan tombol-tombol">
+        <div class="btn-group me-2" role="group" aria-label="Grup Tombol">
+          <a href="index.html" class="btn btn-primary">1</a>
+          <a href="page2.html" class="btn btn-primary">2</a>
+          <a href="page3.html" class="btn btn-primary">3</a>
+          <a href="page4.html" class="btn btn-primary">4</a>
+        </div>
+      </div>
+
+      <!-- Footer atau penutup -->
+      <div>
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+          <p class="mb-1">Web ini dibuat dengan sepenuh hati :3</p>
+          <p class="mb-0">&copy; 2025 CuyUniverse. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>-
+</body>
+
+</html>

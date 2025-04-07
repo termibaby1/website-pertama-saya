@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Eksperimen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body id="body">
+
+    <!-- Navbar (copy dari halaman lain) -->
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Journey of a Coder 😸</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me :3</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="#">playground</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- INI NAVBAR END -->
+
+
+    <!-- Konten Playground -->
+    <div class="container mt-5">
+        <h3 class="text-center text-primary">Halaman Eksperimen ✏️</h3>
+        <p class="text-center text-muted">Coba-coba fitur JavaScript yang seru di sini~</p>
+
+        <!-- bagian 1: ubah background text -->
+
+        <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <hr>
+
+        <!-- bagian 1: ubah background text -->
+
+        <!-- bagian 2: tombol acak-->
+
+        <div id="bagian2" class="mb-4">
+            <h3 class="mt-5">🎲 Random Quotes / Fakta Unik</h3>
+            <p id="random-output" class="border p-3 rounded bg-light">Klik tombol untuk mendapatkan kutipan atau fakta!
+            </p>
+            <button onclick="generateRandomText()" class="btn btn-primary">🔀 Acak!</button>
+        </div>
+        <hr>
+
+        <!-- bagian 2:  tombol acak-->
+
+        <!-- Bagian 3: Tampilkan Teks -->
+        <div id="bagian3" class="mb-4">
+            <h5>📝 Tampilkan Teks</h5>
+            <input type="text" id="inputText" class="form-control mb-2" placeholder="Tulis sesuatu...">
+            <button class="btn btn-success mb-2" onclick="tampilkan()">Tampilkan</button>
+            <p id="hasil"></p>
+        </div>
+        <hr>
+
+        <!-- Bagian 4: Ubah Background Warna -->
+        <div id="bagian4" class="mb-4">
+            <h5>🎨 Ubah Warna Latar</h5>
+            <input type="color" id="bgColor" class="form-control form-control-color" title="Pilih warna latar">
+        </div>
+        <hr>
+
+        <!-- Bagian 5: Hitung Karakter -->
+        <div id="bagian5" class="mb-4">
+            <h5>🔢 Hitung Karakter</h5>
+            <p id="charCount">Jumlah karakter: 0</p>
+        </div>
+        <hr>
+
+        <!-- Bagian 6: Teks Terbalik -->
+        <div id="bagian6" class="mb-4">
+            <h5>🔄 Teks Terbalik</h5>
+            <p id="reversedText">Kebalikannya: -</p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        const input = document.getElementById("inputText");
+        const hasil = document.getElementById("hasil");
+        const charCount = document.getElementById("charCount");
+        const reversedText = document.getElementById("reversedText");
+        const bgColor = document.getElementById("bgColor");
+
+        input.addEventListener("input", function () {
+            const value = input.value;
+
+            // Tampilkan langsung
+            hasil.innerText = "Kamu ngetik: " + value;
+
+            // Tambah emoji kalau ada kata spesial
+            if (value.toLowerCase().includes("martabak")) {
+                hasil.innerText += " 😋";
+            }
+
+            // Hitung jumlah karakter
+            charCount.innerText = "Jumlah karakter: " + value.length;
+
+            // Tampilkan versi terbalik
+            reversedText.innerText = "Kebalikannya: " + value.split("").reverse().join("");
+        });
+
+        function tampilkan() {
+            alert("Kamu menekan tombol: " + input.value);
+        }
+
+        bgColor.addEventListener("input", function () {
+            document.body.style.backgroundColor = this.value;
+        });
+    </script>
+
+    <script>
+        const randomTexts = [
+            "💡 Tahukah kamu? JavaScript awalnya dibuat hanya dalam 10 hari!",
+            "🚀 Jangan takut gagal, takutlah tidak mencoba sama sekali.",
+            "📦 HTML itu fondasi, CSS itu estetika, dan JavaScript itu nyawanya.",
+            "🔧 Website-mu adalah karya seni digital—banggalah!",
+            "🌈 Belajar coding itu seperti menyusun puzzle yang makin lama makin seru!",
+            "🧠 Otak manusia bisa belajar hal baru setiap hari. Jadi, terus explore!"
+        ];
+
+        function generateRandomText() {
+            const randomIndex = Math.floor(Math.random() * randomTexts.length);
+            document.getElementById('random-output').innerText = randomTexts[randomIndex];
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

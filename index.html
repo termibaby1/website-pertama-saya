@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+      @media (max-width: 576px) {
+        .custom-carousel {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        .custom-carousel img {
+          height: auto;
+        }
+    
+        .card img {
+          max-height: 200px;
+          object-fit: cover;
+        }
+      }
+    </style>    
+</head>
+
+<body>
+  <!-- INI NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Journey of a Coder 😸</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact me :3</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about-me.html">About Me</a></li>
+              <li><a class="dropdown-item" href="eksperimen.html">playground</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- INI NAVBAR END -->
+
+  <!-- carousel -->
+  <div class="custom-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="12344.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="NOV_eauU.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="X.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- carousel end -->
+
+  <!-- INI PRODUK NYA -->
+  <div class="container text-center mt-3">
+    <div class="row">
+      <div class="card col-sm-6">
+        <h5 class="card-header">Produk Unggulan</h5>
+        <div class="card-body">
+          <h5 class="card-title">Kualitas produk terbaik untuk kebutuhanmu </h5>
+          <img src="collage-customer-experience-concept.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Nikmati produk pilihan dengan kualitas terjamin dan harga terjangkau..</p>
+          <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+        </div>
+      </div>
+      <div class="card col-sm-6">
+        <h5 class="card-header">Project Website</h5>
+        <div class="card-body">
+          <h5 class="card-title">Desain modern & responsif</h5>
+          <img src="gambar 2.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Website ini dibuat dengan HTML, CSS, dan Bootstrap, cocok untuk pemula belajar
+            frontend.</p>
+          <a href="#" class="btn btn-primary">Lihat Proyek</a>
+        </div>
+      </div>
+      <div class="card col-sm-6">
+        <h5 class="card-header">Lihat Proyek</h5>
+        <div class="card-body">
+          <h5 class="card-title">Membuat layout dengan Bootstrap</h5>
+          <img src="side-shot-code-editor-using-react-js.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Card ini merupakan hasil latihan membuat grid dan komponen dengan Bootstrap.
+          </p>
+          <a href="#" class="btn btn-primary">Coba Sekarang</a>
+        </div>
+      </div>
+      <div class="card col-sm-6">
+        <h5 class="card-header">Coding Santai</h5>
+        <div class="card-body">
+          <h5 class="card-title">Ngoding sambil denger musik</h5>
+          <img src="computer-program-coding-screen.jpg" class="img-thumbnail" alt="...">
+          <p class="card-text">Belajar HTML dan CSS jadi makin asik sambil explore ide-ide jadi web yang
+            keren.</p>
+          <a href="#" class="btn btn-primary">Lihat Karya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- INI PRODUK END -->
+
+  <!-- item tambahan jika mau ditambah -->
+  <div>
+
+    <!-- Navigasi halaman -->
+    <div class="btn-toolbar justify-content-center mt-4" role="toolbar" aria-label="Toolbar dengan tombol-tombol">
+      <div class="btn-group me-2" role="group" aria-label="Grup Tombol">
+        <a href="index.html" class="btn btn-primary">1</a>
+        <a href="page2.html" class="btn btn-primary">2</a>
+        <a href="page3.html" class="btn btn-primary">3</a>
+        <a href="page4.html" class="btn btn-primary">4</a>
+      </div>
+    </div>
+
+    <!-- Footer atau penutup -->
+    <div>
+      <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-1">Web ini dibuat dengan sepenuh hati :3</p>
+        <p class="mb-0">&copy; 2025 CuyUniverse. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
